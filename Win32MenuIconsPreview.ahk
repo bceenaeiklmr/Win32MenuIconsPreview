@@ -94,7 +94,7 @@ Win32MenuIconsPreview() {
         loop subMenu {
             i := A_Index
             subMenu := Menu()
-            strMenu := Format("{:03}", (i - 1) * n) " - " Format("{:03}", A_Index * n)
+            strMenu := Format("{:03}", (i - 1) * n) " - " Format("{:03}", i * n)
             iconSub.Add(strMenu, subMenu)
             loop n {
                 try {
